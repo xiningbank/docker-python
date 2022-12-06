@@ -1,10 +1,10 @@
-FROM python:3.9.9
+FROM python:3.9.15
 
 MAINTAINER zhoukan "xiningbank@gmail.com"
 
 ENV LANG C.UTF-8
 
 RUN echo "alias ll='ls -lh --color=auto'" >> ~/.bashrc
-RUN apt-get update
-RUN apt-get install python3-redis 
-
+#RUN apt-get update
+#RUN apt-get install python3-redis 
+RUN pip3 install redis

@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+    python3:
+        build:
+            context: .
+            dockerfile: Dockerfile_python_3.9.15
+        image: df_python_3.9.15
+        container_name: shpython3
+        volumes:
+            - ./src:/var/www/html
+        tty: true
