@@ -1,12 +1,12 @@
 version: '3'
 
 services:
-    python3:
+    python:
         build:
-            context: .
+            context: ./Dockerfiles
             dockerfile: Dockerfile_python_3.11.1
         image: df_python_3.11.1
-        container_name: ${PYTHON3_CONTAINER:-python3}
+        container_name: ${PYTHON_CONTAINER_NAME:-python}
         volumes:
             - ./src:/var/www
         tty: true
