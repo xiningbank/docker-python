@@ -8,3 +8,4 @@ RUN echo "alias ll='ls -lh --color=auto'" >> ~/.bashrc
 #RUN apt-get update
 #RUN apt-get install python3-redis 
 RUN pip3 install redis
+RUN pip3 install pymysql
