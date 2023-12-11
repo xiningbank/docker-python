@@ -1,0 +1,9 @@
+FROM python:3.12.1-alpine
+
+MAINTAINER zhoukan "xiningbank@gmail.com"
+
+ENV LANG C.UTF-8
+
+RUN echo "alias ll='ls -lh --color=auto'" >> ~/.bashrc
+RUN pip3 install redis
+RUN pip3 install pymysql
