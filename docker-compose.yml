@@ -6,6 +6,7 @@ services:
             context: ./Dockerfiles
             dockerfile: ${PYTHON_DOCKERFILE}
         container_name: ${PYTHON_CONTAINER:-python}
+        image: ${PYTHON_DOCKERFILE}
         volumes:
             - ${HOST_SRC}:/var/src
         tty: true
